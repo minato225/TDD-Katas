@@ -10,7 +10,16 @@ namespace FizzBuzzKata
             var hundred = new StringBuilder();
             for (var i = 1; i <= 100; i++)
             {
-                hundred.Append(i).Append('\n');
+                if (i % 3 == 0)
+                {
+                    hundred.Append("Fizz");
+                }
+                else
+                {
+                    hundred.Append(i);
+                }
+
+                hundred.Append('\n');
             }
             
             return hundred.ToString();
