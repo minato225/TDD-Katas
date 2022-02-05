@@ -10,9 +10,9 @@ namespace FizzBuzzKata.Test
         public void Print_numbers_from_1_to_100()
         {
             var result = FizzBuzzClass.PrintHundred();
-            var expected = string.Join("\n", Enumerable.Range(1, 100));
+            var expected = string.Join("\n", Enumerable.Range(1, 100)) + '\n';
             
-            Assert.AreEqual(result, expected);
+            Assert.AreEqual(expected, result);
         }
     }
 }
