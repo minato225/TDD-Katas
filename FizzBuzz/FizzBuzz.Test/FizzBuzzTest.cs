@@ -16,7 +16,7 @@ namespace FizzBuzzKata.Test
                                         "\nFizz\nBuzz\n"; 
         
         [Test]
-        public void Check_for_Divisible_3()
+        public void Check_for_Divisible_3_and_5()
         {
             var result = FizzBuzzClass.FizzBuzz();
             

@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Text;
 
 namespace FizzBuzzKata
@@ -10,7 +11,11 @@ namespace FizzBuzzKata
             var hundred = new StringBuilder();
             for (var i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0)
+                if (i % 5 == 0)
+                {
+                    hundred.Append("Buzz");
+                }
+                else if (i % 3 == 0)
                 {
                     hundred.Append("Fizz");
                 }
@@ -21,7 +26,7 @@ namespace FizzBuzzKata
 
                 hundred.Append('\n');
             }
-            
+
             return hundred.ToString();
         }
     }
