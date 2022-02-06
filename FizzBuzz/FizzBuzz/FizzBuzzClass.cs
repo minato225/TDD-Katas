@@ -11,15 +11,20 @@ namespace FizzBuzzKata
             var hundred = new StringBuilder();
             for (var i = 1; i <= 100; i++)
             {
-                if (i % 5 == 0)
-                {
-                    hundred.Append("Buzz");
-                }
-                else if (i % 3 == 0)
+                var isThird = i % 3 == 0; 
+                var isFifth = i % 5 == 0;
+                
+                if (isThird)
                 {
                     hundred.Append("Fizz");
                 }
-                else
+                
+                if (isFifth)
+                {
+                    hundred.Append("Buzz");
+                }
+                
+                if(!isFifth && !isThird)
                 {
                     hundred.Append(i);
                 }
